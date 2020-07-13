@@ -1,0 +1,17 @@
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\MonoBankOp.exe.config
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\MonoBankOp.exe
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\MonoBankOp.pdb
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.csprojAssemblyReference.cache
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.Form1.resources
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.Properties.Resources.resources
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.csproj.GenerateResource.cache
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.exe
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.pdb
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.LookingForForm.resources
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.TableForm.resources
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\EntityFramework.dll
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\EntityFramework.SqlServer.dll
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\EntityFramework.xml
+E:\war3\Projects\MonoBankOp\MonoBankOp\bin\Debug\EntityFramework.SqlServer.xml
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.csproj.CopyComplete
+E:\war3\Projects\MonoBankOp\MonoBankOp\obj\Debug\MonoBankOp.HistoryForm.resources
