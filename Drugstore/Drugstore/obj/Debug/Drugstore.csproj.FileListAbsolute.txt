@@ -1,0 +1,17 @@
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\Drugstore.exe.config
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\Drugstore.exe
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\Drugstore.pdb
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.Form1.resources
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.Properties.Resources.resources
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.csproj.GenerateResource.cache
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.exe
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.pdb
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\EntityFramework.dll
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\EntityFramework.SqlServer.dll
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\EntityFramework.xml
+E:\war3\Projects\Drugstore\Drugstore\bin\Debug\EntityFramework.SqlServer.xml
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.csproj.CopyComplete
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.DeliveryForm.resources
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.SoldForm.resources
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.CurrentForm.resources
+E:\war3\Projects\Drugstore\Drugstore\obj\Debug\Drugstore.csprojAssemblyReference.cache
