@@ -1,0 +1,59 @@
+﻿<Window x:Class="NewKindOfDLL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewKindOfDLL"
+        mc:Ignorable="d"
+        Title="Welcome!" Height="360" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" WindowStyle="None" Icon="/Images/icon.png" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <StackPanel Background="BlueViolet">
+        <!--Close and minimize labels  -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Image x:Name="Minimize" Source="Images/Minimize.png"  Width="30" MouseLeftButtonDown="Minimize_MouseLeftButtonDown"></Image>
+            <Image x:Name="Close" Source="Images/Close.png"  Width="30" MouseLeftButtonDown="Close_MouseLeftButtonDown" ></Image>
+        </StackPanel>
+        <!-- Name-->
+        <StackPanel Height="120"  Background="BlueViolet">
+            <TextBlock x:Name="Xazar" Text="Xazar's DLL" FontSize="48" FontWeight="Bold" FontStyle="Italic" FontFamily="Bookman Old Style"  Height="120" Margin="0,30,0,0" TextAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" />
+        </StackPanel>
+        <!-- Login box-->
+        <StackPanel Margin="0,20,0,10">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <TextBox x:Name="LoginBox" FontWeight="Light" Text="Username" FontSize="20" Background="Transparent" Margin="80,0,0,0" Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270" MouseEnter="LoginBox_MouseEnter"/>
+                <Image Source="Images/Us.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="25" Height="25" Margin="-5,0,0,0"/>
+            </StackPanel>
+            <Grid>
+                <Border Background="White" Opacity="0.5" Width="290" Height="2">
+                </Border>
+            </Grid>
+        </StackPanel>
+        <!-- Password box-->
+        <StackPanel Margin="0,0,0,10">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <PasswordBox x:Name="PassBox" FontWeight="Light" Password="Password" FontSize="20" Background="Transparent" Margin="80,0,0,0" Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270" MouseEnter="PassBox_MouseEnter"/>
+                <Image Source="Images/Pass.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="25" Height="25" Margin="-5,0,0,0"/>
+            </StackPanel>
+            <Grid>
+                <Border Background="White" Opacity="0.5" Width="290" Height="2">
+                </Border>
+            </Grid>
+        </StackPanel>
+        <!-- Invalid Label-->
+        <StackPanel Margin="0,20,0,0">
+            <TextBlock x:Name="InvalidLabel" Text="Invalid login or password!" Visibility="Hidden" FontSize="14" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White"></TextBlock>
+        </StackPanel>
+            <!-- Button with lowest labels-->
+        <StackPanel Margin="0,15,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="Newacclabel"  FontSize="14" Content="Don't have an account?"  Foreground="White" MouseLeftButtonDown="Newacclabel_MouseLeftButtonDown" Grid.Column="0" Margin="10,-5,0,0"/>
+                <Label x:Name="Forgotacclabel"  FontSize="14" Content="Forgot your credentials?" Foreground="White" Visibility="Visible" MouseLeftButtonDown="Forgotacclabel_MouseLeftButtonDown" Grid.Column="1" Margin="0,-5,0,0"/>
+                <Button x:Name="SignInButton"    FontSize="20" Content="Sign in"   FontWeight="Normal"   Click="SignInButton_Click" Grid.Column="2" Margin="0,-5,10,0"/>
+            </Grid>
+        </StackPanel>
+    </StackPanel>
+</Window>

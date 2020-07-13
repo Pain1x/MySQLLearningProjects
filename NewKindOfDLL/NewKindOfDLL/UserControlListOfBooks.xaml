@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="NewKindOfDLL.UserControlListOfBooks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NewKindOfDLL" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="BlueViolet">
+    <Grid>
+
+        <materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft,Duration=0:0:0.8}">
+            <!--List textbox-->   
+            <StackPanel Orientation="Vertical" >
+                    <StackPanel>
+                        <TextBlock Text="List of  all books in library" FontSize="30"  Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Copperplate Gothic Bold" FontWeight="Normal" FontStyle="Normal">
+                            <TextBlock.TextDecorations>
+                                <TextDecoration/>
+                            </TextBlock.TextDecorations>
+                        </TextBlock>
+                    </StackPanel>
+                    <!-- Combox box and author textbox-->
+                    <StackPanel HorizontalAlignment="Left">
+                        <TextBlock Text="Select an author" FontSize="24"  Foreground="White" VerticalAlignment="Bottom" FontFamily="Bookman Old Style"/>
+                        <ComboBox x:Name="BoxAuthor" SelectedIndex="0" IsEditable="True" DropDownClosed="BoxAuthor_DropDownClosed" FontSize="20" FontFamily="Bookman Old Style"  Background="Orange" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" MinWidth="200">
+                            <ComboBox.ItemContainerStyle>
+                                <Style TargetType="ComboBoxItem">
+                                    <Setter Property="Background" Value="Orange"/>
+                                    <Setter Property="BorderBrush" Value="Orange"/>
+                                </Style>
+                            </ComboBox.ItemContainerStyle>
+                        </ComboBox>
+                    </StackPanel>
+                    <!--Book textboxes-->
+                    <StackPanel Orientation="Vertical" Margin="0,0,10,0">
+                    <StackPanel>
+                        <TextBlock Text="Select a book to add to your account" FontSize="24"  Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Bookman Old Style" />
+                        <Label Content="The book is already in your account!" x:Name="AlreadyLabel" Margin="0,0,0,0" HorizontalAlignment="Left"  Foreground="White" Visibility="Hidden"/>
+                        <Label x:Name="AddLabel" Margin="0,0,0,0" HorizontalAlignment="Left" Content="The book is added successfully to your acconut!" Foreground="White" Visibility="Hidden"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                    <!-- Datagrid with it's properties-->
+                    <StackPanel Margin="0,10,0,0"  HorizontalAlignment="Left">
+                        <DataGrid x:Name="DataGridBooks"  IsSynchronizedWithCurrentItem="True" IsReadOnly="True" HorizontalGridLinesBrush="Orange"
+    RowBackground="#FFCDE65F" VerticalGridLinesBrush="Azure" HorizontalAlignment="Left" FontFamily="Bookman Old Style" FontStyle="Italic" FontWeight="ExtraLight" FontSize="20" Width="auto" Height="150" Background="Orange" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="DataGridBooks_SelectionChanged">
+                            <DataGrid.RowStyle>
+                                <Style TargetType="DataGridRow">
+                                    <Setter Property="Background" Value="LightBlue" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="Black"/>
+                                            <Setter Property="Foreground" Value="White"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DataGrid.RowStyle>
+                        </DataGrid>
+                    </StackPanel>
+                    <!--Add button-->
+                    <StackPanel Orientation="Horizontal" Margin="0,-30,10,10" HorizontalAlignment="Right">
+                        <Button x:Name="AddButon" Content="Add a book" FontSize="20" FontFamily="Bookman Old Style" Foreground="Black" Background="Orange" Click="AddButon_Click">
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </materialDesign:TransitioningContent>
+
+    </Grid>
+</UserControl>

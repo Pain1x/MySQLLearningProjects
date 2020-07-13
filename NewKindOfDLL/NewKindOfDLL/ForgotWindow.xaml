@@ -1,0 +1,60 @@
+﻿<Window x:Class="NewKindOfDLL.ForgotWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewKindOfDLL"
+        mc:Ignorable="d"
+        Title="Xazar's DLL" Height="400" Width="450" WindowStartupLocation="CenterScreen" Icon="/Images/icon.png" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <StackPanel Background="BlueViolet">
+        <!--Close and minimize labels  -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Image x:Name="Minimize" Source="Images/Minimize.png" Width="30" MouseLeftButtonDown="Minimize_MouseLeftButtonDown"></Image>
+            <Image x:Name="Close" Source="Images/Close.png" Width="30" MouseLeftButtonDown="Close_MouseLeftButtonDown" ></Image>
+        </StackPanel>
+        <!--Recover textbox  -->
+        <StackPanel >
+            <TextBlock x:Name="Xazar" Text="Recover your password" FontSize="30"  FontFamily="Bookman Old Style"  Margin="0,30,0,0" TextAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        </StackPanel>
+        <!--Recover fields  -->
+        <StackPanel>
+            <TextBox x:Name="Enter" FontWeight="Light" Text=" Enter your username" FontSize="20" Background="Transparent"  Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270"/>
+        </StackPanel>
+        <StackPanel Margin="0,0,0,10">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <TextBox x:Name="LoginBox" FontWeight="Light" Text="Username" FontSize="20" Background="Transparent" Margin="90,0,0,0" Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270"/>
+            </StackPanel>
+            <Grid>
+                <Border Background="White" Opacity="0.5" Width="290" Height="2">
+                </Border>
+            </Grid>
+        </StackPanel>
+        <StackPanel>
+            <TextBox x:Name="PassWord" FontWeight="Light" Text=" Enter your new password" FontSize="20" Background="Transparent"  Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270"/>
+        </StackPanel>
+        <StackPanel Margin="0,0,0,10">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <PasswordBox x:Name="PassBox" FontWeight="Light" Password="Password" FontSize="20" Background="Transparent" Margin="90,0,0,0" Opacity="0.5" Foreground="White" BorderThickness="0"  HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="270"/>
+            </StackPanel>
+            <Grid>
+                <Border Background="White" Opacity="0.5" Width="290" Height="2">
+                </Border>
+            </Grid>
+        </StackPanel>
+        <!--Labels  -->
+        <StackPanel>
+            <Label x:Name="OldPass" Content="You have entered previous password!" HorizontalAlignment="Center" Foreground="White" Visibility="Hidden" FontSize="14">                 
+            </Label>
+            <Label x:Name="NewPass" Content="Passwor has been changer succesfully!" HorizontalAlignment="Center" Foreground="White" Visibility="Hidden" FontSize="14">
+            </Label>
+            <Label x:Name="WrongCus" Content="There is no such user!" HorizontalAlignment="Center" Foreground="White" Visibility="Hidden" FontSize="14">
+            </Label>
+        </StackPanel>
+        <!--Buttons  -->
+        <StackPanel Orientation="Horizontal"  Margin="0,0,0,0">
+            <Button x:Name="RecoverButton" Width="100" Height="40" Content="Recover" FontSize="20"  HorizontalAlignment="Left" Margin="30,0,0,0" Click="RecoverButton_Click" >
+            </Button>
+            <Button x:Name="ReturnButton" Width="100" Height="40" Content="Return" FontSize="20" Click="ReturnButton_Click" Margin="190,0,0,0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="29510.png" />
+    <None Remove="582137_close_48x48.png" />
+    <None Remove="585285_window_512x512.png" />
+    <None Remove="585367_window_512x512.png" />
+    <None Remove="642548_close_512x512.png" />
+    <None Remove="Images\Close.png" />
+    <None Remove="Images\Face.png" />
+    <None Remove="Images\icon.png" />
+    <None Remove="Images\Lock.png" />
+    <None Remove="Images\Minimize.png" />
+    <None Remove="Images\Pass.png" />
+    <None Remove="Images\Restore.png" />
+    <None Remove="Images\Us.png" />
+    <None Remove="Images\User.png" />
+    <None Remove="Lock.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Mindbox.Data.Linq" Version="3.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\Face.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\Lock.png" />
+    <Resource Include="Images\Minimize.png" />
+    <Resource Include="Images\Pass.png" />
+    <Resource Include="Images\Restore.png" />
+    <Resource Include="Images\Us.png" />
+    <Resource Include="Images\User.png" />
+  </ItemGroup>
+
+</Project>
